@@ -1,0 +1,304 @@
+{
+  "data": [
+    {
+      "id": "1051954",
+      "type": "virtual_training_room",
+      "attributes": {
+        "room": 2,
+        "virtual_training_date": "2022-08-03T14:00:00.000+02:00",
+        "random": true,
+        "recurrent": true,
+        "created_at": "2022-07-31T16:25:01.000+02:00",
+        "updated_at": "2022-07-31T16:25:01.000+02:00"
+      },
+      "relationships": {
+        "virtual_training": {
+          "data": {
+            "id": "13699918",
+            "type": "virtual_training"
+          }
+        },
+        "virtual_training_schedule": {
+          "data": {
+            "id": "81668",
+            "type": "virtual_training_schedule"
+          }
+        },
+        "training_class": {
+          "data": {
+            "id": "157182",
+            "type": "training_class"
+          }
+        },
+        "trainer": {
+          "data": {
+            "id": "32461",
+            "type": "trainer"
+          }
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "id": "157182",
+      "type": "training_class",
+      "attributes": {
+        "title": "Bestrunning 3 - Ángel Gómez",
+        "subtitle": "Sintiendo la progresión",
+        "short_title": "BR3",
+        "content": "<p>Te presento una clase que combina dos tipos de entrenamiento, una primera parte muy cómoda y fácil y una segunda mucho más movida y energética llena de cambios de ritmo. Para uno de esos días en los que tienes la motivación a tope.</p>\n<p>Tgas: interválica</p>",
+        "official": true,
+        "kcal": 600,
+        "max_duration_seconds": 0,
+        "cover": "https://cdn0.bestcycling.es/image_covers/images/000/110/575/l.png?1622398721",
+        "cover_xl": "https://cdn0.bestcycling.es/image_covers/images/000/110/575/xl.png?1622398721",
+        "graph": "https://cdn0.bestcycling.es/image_covers/images/000/110/574/l.png?1622804924",
+        "graph_watts": null,
+        "category_nr": 31,
+        "trainer_id": 32461,
+        "level_nr": 30,
+        "training_type_nr": 10,
+        "secondary_training_type_nr": null,
+        "training_type": "Intervalos",
+        "secondary_training_type": null,
+        "duration_seconds": 3146,
+        "delay_seconds": 0,
+        "duration_training": 2963,
+        "has_background": 0,
+        "is_new": 0,
+        "is_black": 0,
+        "materials_info": "",
+        "show_effort": 0,
+        "life_force_points": 5,
+        "life_flexibility_points": 0,
+        "life_mind_points": 0,
+        "life_resistance_points": 15,
+        "published_at": "2019-05-10T09:20:00.000+02:00",
+        "published_at_timestamp": 1557472800,
+        "free": false
+      },
+      "relationships": {
+        "trainer": {
+          "data": {
+            "id": "32461",
+            "type": "trainer"
+          }
+        },
+        "training_materials": {
+          "data": []
+        }
+      },
+      "links": {
+        "self": "https://apiv2.bestcycling.es/api/v2/training_classes/157182"
+      }
+    },
+    {
+      "id": "13699918",
+      "type": "virtual_training",
+      "attributes": {
+        "id": 13699918,
+        "guid": "90155358-10dc-11ed-a1bd-0a4d7af02bdf",
+        "user_id": 341606,
+        "training_date": "2022-08-03T12:00:00.000Z",
+        "training_class_id": 157182,
+        "training_class_guid": "157182",
+        "training_class_rating": null,
+        "trainer_id": 32461,
+        "trainer_rating": null,
+        "kcal": null,
+        "km": null,
+        "mean_frequency": null,
+        "difficulty_rating": null,
+        "done": false,
+        "updated_at": "2022-07-31T16:25:01.000+02:00",
+        "deleted": false
+      },
+      "relationships": {
+        "training_class": {
+          "data": {
+            "id": "157182",
+            "type": "training_class"
+          },
+          "links": {
+            "related": "https://apiv2.bestcycling.es/api/v2/training_classes/157182"
+          }
+        }
+      },
+      "links": {
+        "self": "https://apiv2.bestcycling.es/api/v2/virtual_trainings/13699918"
+      }
+    },
+    {
+      "id": "81668",
+      "type": "virtual_training_schedule",
+      "attributes": {
+        "trainee_profile_id": 272828,
+        "guid": "e0ee63fe-cb8c-11ec-a474-02c074a96568",
+        "time_string_utc": "12:00",
+        "offset_utc": 120,
+        "timezone": "Europe/Madrid",
+        "date": null,
+        "training_class_id": 0,
+        "trainer_id": 0,
+        "training_class_category_nr": 31,
+        "training_class_level_nr": 0,
+        "monday": false,
+        "tuesday": false,
+        "wednesday": true,
+        "thursday": false,
+        "friday": false,
+        "saturday": false,
+        "sunday": false,
+        "room": 2,
+        "created_at_timestamp": 1651656647,
+        "updated_at_timestamp": 1651656647
+      },
+      "relationships": {}
+    },
+    {
+      "id": "32461",
+      "type": "trainer",
+      "attributes": {
+        "full_name": "Ángel Gómez",
+        "avatar_url": "https://bestcycling-production.s3.amazonaws.com/avatars/images/000/032/461/m_square.jpg?1612866783",
+        "updated_at": "2022-07-28T19:07:56.000+02:00"
+      },
+      "links": {
+        "self": "https://apiv2.bestcycling.es/api/v2/trainers/32461"
+      }
+    },
+    {
+      "id": "110085",
+      "type": "training_class",
+      "attributes": {
+        "title": "Bestwalking 8 - Julio J. Jiménez",
+        "subtitle": "Sandwich mixto",
+        "short_title": "BW8",
+        "content": "<p>En mis clases de elíptica me gusta experimentar con las estructuras de trabajo. En esta ocasión te propongo un \"sandwich\" de intervalos-aeróbico-intervalos que te va a gustar mucho. Es una clase polivalente, que te puede servir tanto para entrenar duro apretando en los intervalos como para hacer un entrenamiento más \"suave\" llevando resistencia media en la mayor parte de la clase. Dale al \"play\" y te explico bien en qué consiste ;)</p>\n<p>Tags: trabajo continuo, aeróbico, variedad, cambios de velocidad, energía</p>",
+        "official": true,
+        "kcal": 575,
+        "max_duration_seconds": 0,
+        "cover": "https://cdn0.bestcycling.es/image_covers/images/000/051/803/l.png?1622386661",
+        "cover_xl": "https://cdn0.bestcycling.es/image_covers/images/000/051/803/xl.png?1622386661",
+        "graph": "https://cdn0.bestcycling.es/image_covers/images/000/049/886/l.png?1622386333",
+        "graph_watts": "https://cdn0.bestcycling.es/image_covers/images/000/402/439/l.png?1652175981",
+        "category_nr": 2,
+        "trainer_id": 107979,
+        "level_nr": 20,
+        "training_type_nr": 5,
+        "secondary_training_type_nr": null,
+        "training_type": "Variado",
+        "secondary_training_type": null,
+        "duration_seconds": 3032,
+        "delay_seconds": 0,
+        "duration_training": 2879,
+        "has_background": 0,
+        "is_new": 1,
+        "is_black": 1,
+        "materials_info": "",
+        "show_effort": 0,
+        "life_force_points": 1,
+        "life_flexibility_points": 0,
+        "life_mind_points": 0,
+        "life_resistance_points": 11,
+        "published_at": "2018-06-26T10:01:00.000+02:00",
+        "published_at_timestamp": 1530000060,
+        "free": false
+      },
+      "relationships": {
+        "trainer": {
+          "data": {
+            "id": "107979",
+            "type": "trainer"
+          }
+        },
+        "training_materials": {
+          "data": []
+        }
+      },
+      "links": {
+        "self": "https://apiv2.bestcycling.es/api/v2/training_classes/110085"
+      }
+    },
+    {
+      "id": "13699917",
+      "type": "virtual_training",
+      "attributes": {
+        "id": 13699917,
+        "guid": "900b3742-10dc-11ed-813e-0a4d7af02bdf",
+        "user_id": 341606,
+        "training_date": "2022-08-03T11:00:00.000Z",
+        "training_class_id": 110085,
+        "training_class_guid": "110085",
+        "training_class_rating": null,
+        "trainer_id": 107979,
+        "trainer_rating": null,
+        "kcal": null,
+        "km": null,
+        "mean_frequency": null,
+        "difficulty_rating": null,
+        "done": false,
+        "updated_at": "2022-07-31T16:25:01.000+02:00",
+        "deleted": false
+      },
+      "relationships": {
+        "training_class": {
+          "data": {
+            "id": "110085",
+            "type": "training_class"
+          },
+          "links": {
+            "related": "https://apiv2.bestcycling.es/api/v2/training_classes/110085"
+          }
+        }
+      },
+      "links": {
+        "self": "https://apiv2.bestcycling.es/api/v2/virtual_trainings/13699917"
+      }
+    },
+    {
+      "id": "81667",
+      "type": "virtual_training_schedule",
+      "attributes": {
+        "trainee_profile_id": 272828,
+        "guid": "d45b947c-cb8c-11ec-a474-02c074a96568",
+        "time_string_utc": "11:00",
+        "offset_utc": 120,
+        "timezone": "Europe/Madrid",
+        "date": null,
+        "training_class_id": 0,
+        "trainer_id": 0,
+        "training_class_category_nr": 2,
+        "training_class_level_nr": 0,
+        "monday": false,
+        "tuesday": false,
+        "wednesday": true,
+        "thursday": false,
+        "friday": false,
+        "saturday": false,
+        "sunday": false,
+        "room": 2,
+        "created_at_timestamp": 1651656626,
+        "updated_at_timestamp": 1651656626
+      },
+      "relationships": {}
+    },
+    {
+      "id": "107979",
+      "type": "trainer",
+      "attributes": {
+        "full_name": "Julio J. Jiménez",
+        "avatar_url": "https://bestcycling-production.s3.amazonaws.com/avatars/images/000/107/979/m_square.jpg?1566308269",
+        "updated_at": "2022-08-06T10:59:27.000+02:00"
+      },
+      "links": {
+        "self": "https://apiv2.bestcycling.es/api/v2/trainers/107979"
+      }
+    }
+  ],
+  "links": {
+    "self": "https://apiv2.bestcycling.es/api/v2/virtual_training_rooms?filter%5Broom%5D=2&include=training_class%2Cvirtual_training%2Cvirtual_training_schedule%2Cvirtual_training_schedule.trainer&limit=2",
+    "next": "https://apiv2.bestcycling.es/api/v2/virtual_training_rooms?cursor=MTA1MTk1Mw%3D%3D&filter%5Broom%5D=2&include=training_class%2Cvirtual_training%2Cvirtual_training_schedule%2Cvirtual_training_schedule.trainer&limit=2"
+  }
+}
