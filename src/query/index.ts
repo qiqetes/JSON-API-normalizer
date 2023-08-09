@@ -31,15 +31,21 @@ const queryFormat = (value: string, key: string): string => {
  * // filter%5Bslug%5D=cowboy-bebop&filter%5Btitle%5D%5Bvalue%5D=foo&sort=-id
  */
 export function query(
-  params: { [key: string]: any } | { [key: string]: Array<never> },
+  params: QueryParams,
   prefix: string | null = null
 ): string {
   const str = [];
-  // console.log(params);
   for (const param in params) {
-    str.push(
-      queryFormat(params[param], prefix ? `${prefix}[${param}]` : param)
-    );
+    if (params.include) {
+      if (params.include instanceof Array) {
+        str.push(queryFormat("include", params.include.join(",")));
+      } else {
+        str.push(queryFormat("include", params.include));
+      }
+    } else {
+      str.push(queryFormat(param, prefix ? `${prefix}[${param}]` : param));
+    }
   }
+
   return str.join("&");
 }

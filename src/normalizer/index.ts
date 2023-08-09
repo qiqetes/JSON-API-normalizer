@@ -1,10 +1,12 @@
-export const normalizeJAResponse = (
+export const normalizeJAResponse = <T extends Normalized|Normalized[]>(
   res: JAResponse
-): Normalized | Normalized[] => {
+): T => {
   if (!res.data) {
+    // @ts-ignore
     return [];
   }
   if (Array.isArray(res.data)) {
+    // @ts-ignore
     return res.data.map((data) => {
       return normalizeJAObject(data, res.included);
     });
@@ -12,11 +14,11 @@ export const normalizeJAResponse = (
   return normalizeJAObject(res.data, res.included);
 };
 
-const normalizeJAObject = (
+const normalizeJAObject = <T extends Normalized>(
   jsonApiItem: Data,
   inclduded: Data[] | undefined,
   alreadyIncluded: string[] = []
-): Normalized => {
+): T => {
   if (jsonApiItem.relationships && inclduded?.length) {
     return {
       id: jsonApiItem.id,
